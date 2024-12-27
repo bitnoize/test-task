@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/gate/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/gate/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/gate",
+  "projects": {
+    "gate": {
+      "type": "application",
+      "root": "apps/gate",
+      "entryFile": "main",
+      "sourceRoot": "apps/gate/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/gate/tsconfig.app.json"
+      }
+    }
+  }
+}
